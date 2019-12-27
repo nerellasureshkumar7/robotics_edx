@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+	 <!-- Solution  -->
+	<node pkg="edx_week2" name="solution" type="solution.py"/>
+
+	<!-- visualization marker  -->
+	<node pkg="edx_week2" name="marker_publisher" type="marker_publisher"/>
+
+	<node pkg="rviz" name="rviz" type="rviz" args = "-d $(find edx_week2)/config/week2.rviz"/>
+
+</launch>
